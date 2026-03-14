@@ -380,4 +380,77 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ========================================
+  // 3D Interactive Logo
+  // ========================================
+  const logo3d = document.querySelector('.logo-3d');
+  const logoContainer = document.getElementById('interactiveLogo');
+  
+  if (logo3d && logoContainer) {
+    let isDragging = false;
+    let previousMousePosition = { x: 0, y: 0 };
+    let currentRotation = { x: -15, y: -20 };
+    let targetRotation = { x: -15, y: -20 };
+    
+    // Initial rotation
+    logo3d.style.transform = `rotateX(${currentRotation.x}deg) rotateY(${currentRotation.y}deg)`;
+
+    const startDrag = (e) => {
+      isDragging = true;
+      const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+      const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+      previousMousePosition = { x: clientX, y: clientY };
+    };
+
+    const endDrag = () => {
+      isDragging = false;
+    };
+
+    const drag = (e) => {
+      if (!isDragging) return;
+      
+      const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+      const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+
+      const deltaMove = {
+        x: clientX - previousMousePosition.x,
+        y: clientY - previousMousePosition.y
+      };
+
+      targetRotation.y += deltaMove.x * 0.6;
+      targetRotation.x -= deltaMove.y * 0.6;
+
+      // Limit X rotation to avoid flipping upside down entirely
+      targetRotation.x = Math.max(-80, Math.min(80, targetRotation.x));
+
+      previousMousePosition = { x: clientX, y: clientY };
+    };
+
+    logoContainer.addEventListener('mousedown', startDrag);
+    document.addEventListener('mouseup', endDrag);
+    document.addEventListener('mousemove', drag);
+
+    logoContainer.addEventListener('touchstart', startDrag, {passive: false});
+    document.addEventListener('touchend', endDrag);
+    document.addEventListener('touchmove', (e) => {
+      if(isDragging) e.preventDefault();
+      drag(e);
+    }, {passive: false});
+    
+    // Animation loop for smooth interpolation and auto-rotation
+    const animateLogo = () => {
+      if (!isDragging) {
+        targetRotation.y += 0.4; // Auto rotate slightly
+      }
+      
+      // Smooth interpolation
+      currentRotation.x += (targetRotation.x - currentRotation.x) * 0.1;
+      currentRotation.y += (targetRotation.y - currentRotation.y) * 0.1;
+      
+      logo3d.style.transform = `rotateX(${currentRotation.x}deg) rotateY(${currentRotation.y}deg)`;
+      requestAnimationFrame(animateLogo);
+    };
+    animateLogo();
+  }
+
 });
