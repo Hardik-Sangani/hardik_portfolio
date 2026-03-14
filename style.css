@@ -694,9 +694,9 @@ img {
 .exp-number {
   display: block;
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .exp-text {
