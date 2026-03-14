@@ -1269,6 +1269,17 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: -24px;
+    width: 90%;
+    padding: 15px;
+  }
+  
+  .exp-number {
+    font-size: 1.5rem;
+  }
+  
+  .exp-text {
+    font-size: 0.85rem;
+    line-height: 1.2;
   }
 
   .highlight-item {
