@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardik Sangani | AI Automations & Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Particle Network Background Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">HS<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Hardik Sangani</h1>
+        <h2 class="hero-role reveal-up">AI Automations & <span class="accent">Data Analyst</span></h2>
+        <p class="hero-description reveal-up">Building Smarter Workflows with Data & AI | Automation Specialist | Turning Data into Efficient Systems</p>
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#" class="btn btn-secondary" id="downloadResume">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal-scale">
+        <div class="hero-card-3d" id="heroCard">
+          <div class="hero-card-inner">
+            <div class="hero-avatar">
+              <img src="profile.jpg" alt="Hardik Sangani" class="avatar-img" />
+            </div>
+            <div class="hero-card-info">
+              <span class="card-tag">Seeking Opportunities</span>
+              <p class="card-stat"><strong>B.Tech</strong> CSE & Data Science</p>
+              <p class="card-stat"><strong>20+</strong> Projects Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Driven by data, powered by <span class="accent">automation</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-img-wrapper">
+            <div class="about-img-placeholder">
+              <img src="profile.jpg" alt="Hardik Sangani" class="about-photo" />
+            </div>
+            <div class="about-img-border"></div>
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-number">CSE</span>
+            <span class="exp-text">B.Tech<br />2024-2028</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="about-text">
+            I'm a Computer Science & Data Science student at Jain University, Bengaluru, with a deep interest in AI automation and data analytics. I enjoy building intelligent workflows that simplify complex processes and help businesses make data-driven decisions.
+          </p>
+          <p class="about-text">
+            My journey started with curiosity about how data shapes decisions and how AI can automate the mundane. Today, I work with Python, SQL, AI agents, and various automation tools to create systems that are efficient, scalable, and impactful. I'm actively seeking internship opportunities to apply my skills in real-world settings.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <h4>Data-Driven Insights</h4>
+                <p>Extracting meaningful patterns from raw data</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+              </div>
+              <div>
+                <h4>Smart Automation</h4>
+                <p>Building AI-powered workflows that save time</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <h4>Quick Learner</h4>
+                <p>Adapting fast to new tools and technologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Technologies I <span class="accent">work with</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" style="--delay: 0">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.071-.757.091-.957.007-.078H7.81l.658 7.345h7.21l-.269 3.098-3.412.927-3.394-.927-.233-2.613H6.092l.411 4.68 5.494 1.524 5.489-1.524.694-7.908H8.531z"/></svg>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 1">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v4H7v2h4v4h2v-4h4v-2h-4V7h-2z"/></svg>
+            </div>
+            <h3 class="skill-name">SQL</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 2">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3z"/></svg>
+            </div>
+            <h3 class="skill-name">Excel</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 3">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.071-.757.091-.957.007-.078H7.81l.658 7.345h7.21l-.269 3.098-3.412.927-3.394-.927-.233-2.613H6.092l.411 4.68 5.494 1.524 5.489-1.524.694-7.908H8.531z"/></svg>
+            </div>
+            <h3 class="skill-name">HTML & CSS</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 4">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622C12.31 2.967 10.548 2.018 9.203 2.018c-.31 0-.592.058-.838.174-1.466.665-1.97 2.375-1.416 4.956C4.99 7.741 3.6 8.687 3.6 9.94c0 1.252 1.395 2.203 3.363 2.796-.555 2.575-.052 4.278 1.41 4.94.244.112.524.167.832.167 1.346 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.31 0 .593-.057.839-.174 1.466-.665 1.97-2.375 1.416-4.956C23.195 12.1 24.585 11.148 24.585 9.895c0-1.252-1.395-2.203-3.363-2.796.555-2.575.052-4.278-1.41-4.94a1.886 1.886 0 0 0-.838-.174z"/></svg>
+            </div>
+            <h3 class="skill-name">React</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 5">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4v1a3 3 0 0 1 3 3v1a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-1a3 3 0 0 1 3-3V6a4 4 0 0 1 4-4z"/><circle cx="10" cy="10" r="1" fill="currentColor"/><circle cx="14" cy="10" r="1" fill="currentColor"/><path d="M9 16v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3"/></svg>
+            </div>
+            <h3 class="skill-name">AI Agents</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 6">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </div>
+            <h3 class="skill-name">Automation</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay: 7">
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 17l4-8 4 4 4-6"/></svg>
+            </div>
+            <h3 class="skill-name">Data Analysis</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Selected <span class="accent">works</span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" style="--delay: 0">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <span>Project Preview</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live site">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">E-Commerce Dashboard</h3>
+              <p class="project-desc">A full-featured admin dashboard with real-time analytics, inventory management, and sales tracking.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" style="--delay: 1">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <span>Project Preview</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live site">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Weather Application</h3>
+              <p class="project-desc">A beautiful weather app with location-based forecasts, interactive maps, and animated weather icons.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" style="--delay: 2">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <span>Project Preview</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live site">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-desc">A collaborative task manager with drag-and-drop boards, real-time sync, and team workspaces.</p>
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Socket.io</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card reveal-up" style="--delay: 3">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <span>Project Preview</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live site">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="View source code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portfolio Template</h3>
+              <p class="project-desc">A modern, responsive portfolio template with smooth animations, dark mode, and customizable sections.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's work <span class="accent">together</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's build something amazing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>hardik0556@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Bengaluru, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">JD<span class="dot">.</span></a>
+          <p>Turning data into smarter systems.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hardik Sangani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
